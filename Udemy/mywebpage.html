@@ -72,6 +72,51 @@
         document.getElementById("text").innerHTML = textEntered; // modifica o paragrafo com o valor inserido no campo de entrada
       }
     </script>
+
+    // class 100 trabalhando com array
+    <script type="text/javascript">
+      var myarray = new Array();
+      myarray[0] = "pizza";
+      myarray[1] = "chocolate";
+      var tweets = ["Morning everybody", "I love you"];
+      tweets.push("bacj to work!"); // epurra para o array um valor
+      tweets.splice(1,0, "corn flakes"); // é deletado apenas a posição escolhida e é posicionado na primeira posição
+      alert(myarray[0]); //irá imprimir o array na posição selecionada
+      console.log(myarray.length); // imprimi no console o tamanho do array
+    </script>
+
+    // class 101 if statment
+
+    <p>What is the magic word?</p>
+    <p><input type="text" id="magicword"></p>
+    <p><button id="checkmagicword">Enter</button></p>
+
+    <script type="text/javascript">
+      var x = 1;
+
+      if(x == 1){
+        alert("x is 1!!");
+      }else{
+        alert("x is not 1!");
+      }
+
+      document.getElementById("checkmagicword").onclick = function(){
+        var magicwordEntered = document.getElementById("magicword").value;
+        var magicword = "abracadabra";
+
+        if (magicwordEntered == magicword) {
+          alert("you got it!");
+        }else{
+          alert("hope there");
+        }
+      }
+
+    </script>
+
+    // class 103
+    <script type="text/javascript">
+      alert(Math.floor(Math.randon()*5)); // gera números de forma randomica
+    </script>
   </body>
 
 </html>
